@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "snapdup"
+version = "1.0.0"
+description = "Reclaim your disk: find duplicate files and visualize usage with a self-contained, offline HTML treemap. Zero dependencies."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+keywords = ["duplicates", "disk-usage", "treemap", "cleanup", "privacy", "cli", "offline"]
+authors = [{ name = "SnapDup contributors" }]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: System :: Filesystems",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://github.com/qf44/snapdup"
+Repository = "https://github.com/qf44/snapdup"
+
+[project.scripts]
+snapdup = "snapdup:main"
+
+[tool.setuptools]
+py-modules = ["snapdup"]

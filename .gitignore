@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.DS_Store
+snapdup_report.html
+snapdup_summary.json
+.venv/
